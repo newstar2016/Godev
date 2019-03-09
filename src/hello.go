@@ -1,8 +1,12 @@
 package main
+
 import (
 	"fmt"
+	"os"
 )
 
 func main() {
-	fmt.Println("Hello World I'm go")
+	if len(os.Args) > 1 {
+		fmt.Println("Hello World I'm go", os.Args[1])
+	}
 }
